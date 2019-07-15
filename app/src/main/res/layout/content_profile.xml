@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Profile">
+
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/profile_logo"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="370dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/amatic_sc"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textColor="#f2f5df"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/name"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/amatic_sc"
+            android:gravity="center"
+            android:text="@string/country"
+            android:textColor="#f2f5df"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/kenya"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/id_track"
+            app:layout_constraintTop_toBottomOf="@+id/id_track" />
+
+        <TextView
+            android:id="@+id/id_phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/amatic_sc"
+            android:gravity="center"
+            android:text="@string/phone_number"
+            android:textColor="#f2f5df"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/number"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/id_country"
+            app:layout_constraintTop_toBottomOf="@+id/id_country" />
+
+        <TextView
+            android:id="@+id/id_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/amatic_sc"
+            android:gravity="center"
+            android:text="@string/track"
+            android:textColor="#f2f5df"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/android"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/id_name"
+            app:layout_constraintTop_toBottomOf="@+id/id_name" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:gravity="fill_horizontal|fill_vertical"
+            android:text="@string/name_name"
+            android:textColor="#dcdcdc"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/id_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/id_name"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:gravity="fill_horizontal|fill_vertical"
+            android:text="@string/android"
+            android:textColor="#dcdcdc"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/id_track"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="@+id/id_track"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/kenya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:gravity="fill_horizontal|fill_vertical"
+            android:text="@string/kenya"
+            android:textColor="#dcdcdc"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="@+id/id_country"
+            app:layout_constraintEnd_toEndOf="@+id/android"
+            app:layout_constraintTop_toTopOf="@+id/id_country"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:gravity="fill_horizontal|fill_vertical"
+            android:text="@string/number"
+            android:textColor="#dcdcdc"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/id_phoneNumber"
+            app:layout_constraintEnd_toEndOf="@+id/kenya"
+            app:layout_constraintTop_toTopOf="@+id/id_phoneNumber"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

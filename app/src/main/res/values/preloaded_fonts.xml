@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alex_brush</item>
+        <item>@font/amatic_sc</item>
+        <item>@font/annie_use_your_telescope</item>
+        <item>@font/astloch</item>
+        <item>@font/bigelow_rules</item>
+        <item>@font/bilbo_swash_caps</item>
+        <item>@font/bungee_hairline</item>
+        <item>@font/cabin_sketch</item>
+        <item>@font/cedarville_cursive</item>
+    </array>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">diba</string>
+    <string name="select">Select :</string>
+    <string name="btn_about">About ALC</string>
+    <string name="btn_profile">Profile</string>
+    <string name="url_resource">https://andela.com/alc/</string>
+    <string name="img">Profile Photo</string>
+
+
+    <string name="name_name">Elvis Madiba </string>
+    <string name="android">Android </string>
+    <string name="kenya">Kenya </string>
+    <string name="number">+254 721-369-488 </string>
+
+    <string name="name">Name :</string>
+    <string name="track">Track :</string>
+    <string name="country">Country :</string>
+    <string name="phone_number">Phone Number :</string>
+    <string name="title_activity_profile">Profile</string>
+
+
+</resources>
